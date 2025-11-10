@@ -9,6 +9,7 @@ public class Graph<V> {
 
     public void addVertex(V v) {
         if (adjacencyList.containsKey(v)) {
+            System.out.println("Такая вершина уже существует!");
             return;
         }
 

@@ -3,7 +3,6 @@ public class MyMap<K, V> {
     private int size = 0;
 
     private void expand(){
-        int new_length = data.length * 2;
         Entry<K, V>[] new_data = new Entry[data.length * 2];
         for (int i = 0; i < size; i++){
             new_data[i] = data[i];
